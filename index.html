@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina Chat | AI Grammar Assistant</title>
+    <meta name="description" content="A powerful AI chat bot that helps you perfect your grammar while you converse.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-neon">
+    <div id="cursor-glow"></div>
+    <div class="background-animation">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <header>
+        <div class="logo">
+            <span class="logo-icon">✨</span>
+            <h1>Lumina AI</h1>
+        </div>
+        <div class="controls">
+            <div class="theme-switcher">
+                <button class="theme-btn active" data-theme="neon" title="Neon Nebula"></button>
+                <button class="theme-btn" data-theme="midnight" title="Midnight Onyx"></button>
+                <button class="theme-btn" data-theme="emerald" title="Emerald Forest"></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="chat-container">
+            <div class="welcome-message">
+                <h2>Hello! I'm Lumina.</h2>
+                <p>I'll help you chat and perfect your grammar at the same time. Type anything below!</p>
+            </div>
+            <div id="messages-list">
+                <!-- Messages will appear here -->
+            </div>
+            <div id="typing-indicator" class="hidden">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+
+        <div class="input-area">
+            <div class="input-wrapper">
+                <textarea id="user-input" placeholder="Type your message here..." rows="1"></textarea>
+                <button id="send-btn" aria-label="Send message">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
